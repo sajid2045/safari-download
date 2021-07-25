@@ -1,0 +1,5 @@
+#!/bin/bash
+set -x;
+python3 /root/safaribooks/safaribooks.py --cred "$SAFARI_USER:$SAFARI_PASS" $1
+
+mv /root/safaribooks/Books/* /downloads
